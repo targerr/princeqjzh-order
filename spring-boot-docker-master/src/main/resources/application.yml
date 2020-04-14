@@ -1,0 +1,21 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: op-user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    # WARNING: 数据库可能会被回收
+    url: jdbc:mysql://47.103.14.43:3306/jenkins?Unicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: edu.virgil.docker.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
