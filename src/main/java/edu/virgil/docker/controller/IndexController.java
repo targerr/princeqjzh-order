@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 import edu.virgil.docker.entity.User;
 import edu.virgil.docker.service.UserService;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author virgil.Wang
  * @date 2019/7/25 16:54
@@ -29,8 +32,11 @@ public class IndexController {
     }
 
     @GetMapping("/users/{id}")
-    public User getUserById(@PathVariable("id") Long id) {
-        return userService.getById(id);
+    public Map<String,Object> getUserById(@PathVariable("id") Long id) {
+        Map<String,Object> result = new HashMap<>();
+        result.put("user",userService.getById(id));
+        result.put("message","success");
+        return result;
     }
 
 }
