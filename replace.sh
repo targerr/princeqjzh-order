@@ -2,8 +2,8 @@
 #!/bin/bash
 # 先判断文件是否存在，如果存在，则备份
 # cd  /root/.jenkins/workspace/gitHub/target 可以用下面代替
-cd $PROJ_PATH/target
-
+# cd $PROJ_PATH/target
+cd  /root/.jenkins/workspace/gitHub/target
 # 备份
 cp spring-boot-docker-order.war /opt/soft/spring-boot-docker-order.war
 # 备份重命名
