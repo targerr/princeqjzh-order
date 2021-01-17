@@ -8,5 +8,5 @@ cd $PROJ_PATH/target
 cp spring-boot-docker-order.war /opt/soft/spring-boot-docker-order.war
 # 备份重命名
 mv /opt/soft/spring-boot-docker-order.war spring-boot-docker-order.war.`date +%Y%m%d%H%M%S`
-
+ echo "--------------copy------------"
 #此处 /opt/soft/spring-boot-docker-order.war根据自己实际jar包名称和路径修改
