@@ -17,7 +17,6 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 
 
-
 @SpringBootApplication
 @MapperScan("edu.virgil.docker.mapper")
 public class SpringBootDockerApplication extends SpringBootServletInitializer {
