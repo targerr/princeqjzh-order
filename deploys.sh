@@ -7,4 +7,5 @@ sh $PROJ_PATH/replace.sh
 
 cd $PROJ_PATH/target
 
+
 nohup java -jar spring-boot-docker-order.war &
