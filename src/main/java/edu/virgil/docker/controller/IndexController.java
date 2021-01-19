@@ -42,7 +42,7 @@ public class IndexController {
         result.put("user",userService.getById(id));
         result.put("message","success");
         result.put("time",s7);
-        result.put("text","哈哈");
+        result.put("text","老铁66");
         return result;
     }
 
